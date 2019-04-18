@@ -34,7 +34,7 @@ const App = () => {
 				audio.play()
 			}
 
-			axios.get(process.env.API_ENDPOINT).then(({ data }) => {
+			axios.get(process.env.REACT_APP_API_ENDPOINT).then(({ data }) => {
 				setState(data)
 
 				// check if the door is still open in 2 seconds
